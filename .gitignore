@@ -8,3 +8,5 @@ Thumbs.db
 .claude/cache/
 .idea/
 .vscode/
+gmaps_scraper/
+__pycache__/
