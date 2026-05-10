@@ -1,0 +1,17 @@
+{
+  "name": "askelira-marketplace",
+  "owner": {
+    "name": "AskElira",
+    "url": "https://github.com/AskElira"
+  },
+  "plugins": [
+    {
+      "name": "askelira",
+      "source": ".",
+      "description": "Multi-agent autonomous building pipeline (Elira, Steven, Alba, David, Vex). Decomposes a goal into floors, builds real working code, validates and self-fixes.",
+      "version": "1.0.0",
+      "category": "automation",
+      "tags": ["agents", "builder", "pipeline", "automation"]
+    }
+  ]
+}

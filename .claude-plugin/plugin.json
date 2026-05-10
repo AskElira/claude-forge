@@ -1,0 +1,19 @@
+{
+  "name": "askelira",
+  "version": "1.0.0",
+  "description": "Multi-agent autonomous building pipeline. Decomposes a goal into floors and ships real working code via Elira/Steven/Alba/David/Vex sub-agents.",
+  "author": {
+    "name": "AskElira",
+    "url": "https://github.com/AskElira"
+  },
+  "homepage": "https://github.com/AskElira/AskElira3",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "automation",
+    "builder",
+    "pipeline",
+    "multi-agent",
+    "askelira"
+  ]
+}
