@@ -1,6 +1,6 @@
-# AskElira — Multi-Agent Building Pipeline
+# Claude Forge — Multi-Agent Building Pipeline
 
-This project ships an AskElira pipeline as a Claude Code plugin. When installed, the plugin provides 6 sub-agents and 4 slash commands that turn a goal description into shipped, validated, working code.
+This project ships the Claude Forge pipeline as a Claude Code plugin. When installed, the plugin provides 6 sub-agents and 4 slash commands that turn a goal description into shipped, validated, working code.
 
 ## Pipeline shape
 
@@ -33,9 +33,9 @@ Goal
 ## Workspace conventions
 
 - Each goal builds into `./workspaces/<goal-slug>/`
-- Plan persisted at `<workspace>/.askelira/plan.json`
-- Per-floor history at `<workspace>/.askelira/floor-<N>-history.json`
-- Final report at `<workspace>/.askelira/report.md`
+- Plan persisted at `<workspace>/.claude-forge/plan.json`
+- Per-floor history at `<workspace>/.claude-forge/floor-<N>-history.json`
+- Final report at `<workspace>/.claude-forge/report.md`
 - Real source files live at the workspace root and standard subdirs (`src/`, `tests/`, etc.)
 
 ## Hard rules across all agents
@@ -60,10 +60,10 @@ These rules are reproduced in `agents/david.md` and `agents/vex.md`.
 
 ## Slash commands
 
-- `/askelira:build <goal>` — full pipeline
-- `/askelira:plan <goal>` — preview floor decomposition only
-- `/askelira:fix <slug> <floor>` — manual Steven retry on a blocked floor
-- `/askelira:status` — list all workspaces + floor states
+- `/claude-forge:build <goal>` — full pipeline
+- `/claude-forge:plan <goal>` — preview floor decomposition only
+- `/claude-forge:fix <slug> <floor>` — manual Steven retry on a blocked floor
+- `/claude-forge:status` — list all workspaces + floor states
 
 ## When NOT to use this plugin
 

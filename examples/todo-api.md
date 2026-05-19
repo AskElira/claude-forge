@@ -1,11 +1,11 @@
 # Example — Building a Todo REST API
 
-A walk-through of what running `/askelira:build` looks like end to end.
+A walk-through of what running `/claude-forge:build` looks like end to end.
 
 ## Invocation
 
 ```
-/askelira:build a REST API for a todo app with Express, SQLite, JWT auth, and Jest tests
+/claude-forge:build a REST API for a todo app with Express, SQLite, JWT auth, and Jest tests
 ```
 
 ## What happens
@@ -84,7 +84,7 @@ Take floor 3 (JWT auth) as a worked example.
 
 ### Step 3 — Report
 
-After all 5 floors land, orchestrator writes `./workspaces/rest-api-todo-app/.askelira/report.md`:
+After all 5 floors land, orchestrator writes `./workspaces/rest-api-todo-app/.claude-forge/report.md`:
 
 ```
 # Build Report — REST API for a todo app
@@ -121,4 +121,4 @@ npm test
 npm start
 ```
 
-That's the full loop. Same mechanism as the original AskElira3 Hermes pipeline, but the runtime is Claude Code itself.
+That's the full loop. Same mechanism as the original AskElira3 Hermes pipeline, but the runtime is Claude Code itself — now shipped as the Claude Forge plugin.

@@ -1,12 +1,12 @@
 ---
-description: Run the AskElira multi-agent build pipeline on a goal. Decomposes into floors, then per floor runs Alba → Vex Gate 1 → David → Vex Gate 2 → Elira → (Steven if rejected) up to 5 iterations, with a Rescue agent as the final fallback.
+description: Run the Claude Forge multi-agent build pipeline on a goal. Decomposes into floors, then per floor runs Alba → Vex Gate 1 → David → Vex Gate 2 → Elira → (Steven if rejected) up to 5 iterations, with a Rescue agent as the final fallback.
 argument-hint: <goal description>
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task, TodoWrite
 ---
 
-# AskElira Build Pipeline
+# Claude Forge Build Pipeline
 
-You are the **orchestrator** for the AskElira pipeline. You do not write code yourself — you dispatch sub-agents and track state.
+You are the **orchestrator** for the Claude Forge pipeline. You do not write code yourself — you dispatch sub-agents and track state.
 
 The user's goal is:
 
@@ -28,7 +28,7 @@ Use `TodoWrite` to track each floor as a top-level todo, plus the per-floor pipe
 
 ### Step 0 — Plan
 
-Dispatch the **elira** sub-agent in PLAN mode with the goal. Receive a JSON array of 3-7 floors. Persist it to `WORKSPACE/.askelira/plan.json`.
+Dispatch the **elira** sub-agent in PLAN mode with the goal. Receive a JSON array of 3-7 floors. Persist it to `WORKSPACE/.claude-forge/plan.json`.
 
 Show the user the floor list before running. If the plan is clearly wrong, you may re-dispatch elira once with a clarifying note.
 
@@ -57,13 +57,13 @@ After rescue, dispatch `elira` (APPROVE mode) one final time. If approved → LI
 
 ### Step 3 — Report
 
-When all waves complete, write a summary to `WORKSPACE/.askelira/report.md`:
+When all waves complete, write a summary to `WORKSPACE/.claude-forge/report.md`:
 - Goal text
 - Floor list with status (LIVE / BLOCKED) and iteration count
 - File tree of `WORKSPACE`
 - Any blocked floors with their failure history
 
-Print the summary to the user. If any floor is BLOCKED, recommend `/askelira:fix <floor-number>` to retry it manually.
+Print the summary to the user. If any floor is BLOCKED, recommend `/claude-forge:fix <floor-number>` to retry it manually.
 
 ## Hard rules
 

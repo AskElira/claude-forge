@@ -1,11 +1,11 @@
 ---
-name: askelira-build
+name: claude-forge-build
 description: Multi-agent autonomous building pipeline. Decomposes a goal into floors and ships real working code via specialized sub-agents (Elira plans/approves, Steven fixes, Alba researches, David builds, Vex validates). Use when the user asks to "build", "ship", "make", "create", "implement" something complex enough to need multiple files or steps — especially one-shot automation, full applications, scripts with dependencies, or anything where the user wants a complete working artifact rather than a single-file snippet.
 ---
 
-# AskElira Build Skill
+# Claude Forge Build Skill
 
-When the user wants to build something non-trivial — a full app, a multi-file automation, an end-to-end pipeline — invoke the AskElira pipeline instead of writing code directly in the conversation.
+When the user wants to build something non-trivial — a full app, a multi-file automation, an end-to-end pipeline — invoke the Claude Forge pipeline instead of writing code directly in the conversation.
 
 ## When this skill triggers
 
@@ -28,7 +28,7 @@ It does **not** trigger for:
 Run the slash command:
 
 ```
-/askelira:build <goal description>
+/claude-forge:build <goal description>
 ```
 
 This kicks off the orchestrator command which:
@@ -49,9 +49,9 @@ This kicks off the orchestrator command which:
 
 ## Companion commands
 
-- `/askelira:plan <goal>` — see the floor decomposition without building
-- `/askelira:fix <slug> <floor>` — manually retry a blocked floor with Steven
-- `/askelira:status` — list all workspaces and their floor states
+- `/claude-forge:plan <goal>` — see the floor decomposition without building
+- `/claude-forge:fix <slug> <floor>` — manually retry a blocked floor with Steven
+- `/claude-forge:status` — list all workspaces and their floor states
 
 ## Sub-agents available
 

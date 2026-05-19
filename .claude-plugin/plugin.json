@@ -1,12 +1,12 @@
 {
-  "name": "askelira",
+  "name": "claude-forge",
   "version": "1.0.0",
   "description": "Multi-agent autonomous building pipeline. Decomposes a goal into floors and ships real working code via Elira/Steven/Alba/David/Vex sub-agents.",
   "author": {
     "name": "AskElira",
     "url": "https://github.com/AskElira"
   },
-  "homepage": "https://github.com/AskElira/AskElira3",
+  "homepage": "https://github.com/AskElira/claude-forge",
   "license": "MIT",
   "keywords": [
     "agents",
@@ -14,6 +14,6 @@
     "builder",
     "pipeline",
     "multi-agent",
-    "askelira"
+    "claude-forge"
   ]
 }

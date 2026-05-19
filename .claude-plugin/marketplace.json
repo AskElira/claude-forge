@@ -1,12 +1,12 @@
 {
-  "name": "askelira-marketplace",
+  "name": "claude-forge-marketplace",
   "owner": {
     "name": "AskElira",
     "url": "https://github.com/AskElira"
   },
   "plugins": [
     {
-      "name": "askelira",
+      "name": "claude-forge",
       "source": ".",
       "description": "Multi-agent autonomous building pipeline (Elira, Steven, Alba, David, Vex). Decomposes a goal into floors, builds real working code, validates and self-fixes.",
       "version": "1.0.0",

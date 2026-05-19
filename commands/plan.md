@@ -1,10 +1,10 @@
 ---
-description: Plan a goal into floors without building. Dispatches Elira in PLAN mode and prints the resulting floor decomposition. Useful for sanity-checking a goal before running /askelira:build.
+description: Plan a goal into floors without building. Dispatches Elira in PLAN mode and prints the resulting floor decomposition. Useful for sanity-checking a goal before running /claude-forge:build.
 argument-hint: <goal description>
 allowed-tools: Read, Glob, Grep, Task
 ---
 
-# AskElira Plan
+# Claude Forge Plan
 
 Dispatch the **elira** sub-agent in PLAN mode with the goal:
 
@@ -24,6 +24,6 @@ Floor 1 — <name>
 
 After the table, briefly describe the **execution waves** (which floors can run in parallel based on `dependsOn`).
 
-End with a one-line suggestion: `Run /askelira:build $ARGUMENTS to ship this.`
+End with a one-line suggestion: `Run /claude-forge:build $ARGUMENTS to ship this.`
 
 Do not write any files. Do not dispatch any other sub-agents.
